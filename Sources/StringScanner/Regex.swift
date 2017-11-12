@@ -115,7 +115,7 @@ final class Regex {
         let startIndex = string.index(string.startIndex, offsetBy: start)
         let endIndex = string.index(string.startIndex, offsetBy: end)
         let match = string[startIndex ..< endIndex]
-        groups.append(match)
+        groups.append(String(match))
         j += 1
       }
       
